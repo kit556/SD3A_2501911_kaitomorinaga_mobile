@@ -1,0 +1,35 @@
+{
+  "name": "Flutter Project",
+  "workspaceFolder": "/home/developer/workspace",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "flutter",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.autoSave": "onFocusChange",
+        "[dart]": {
+          "editor.formatOnSave": true,
+          "editor.formatOnType": true,
+          "editor.rulers": [
+            80
+          ],
+          "editor.selectionHighlight": false,
+          "editor.tabCompletion": "onlySnippets",
+          "editor.wordBasedSuggestions": "off"
+        },
+        "dart.flutterSdkPath": "/opt/flutter"
+      },
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-containers",
+        "GitHub.codespaces"
+      ]
+    }
+  },
+  "postCreateCommand": "echo -e '\\n=====================\\nflutterプロジェクトフォルダを生成するには、以下のコマンドをターミナルで実行してください\\nflutter create \"プロジェクト名\"\\n「my_appプロジェクトを生成する」例） flutter create my_app\\nそして作成したプロジェクトフォルダへ移動して、flutter run コマンドでプロジェクトアプリを実行してください。\\ncd my_app\\nflutter run\\n=====================\\n'",
+  "remoteUser": "developer"
+}
